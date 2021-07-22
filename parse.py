@@ -29,12 +29,12 @@ def get_mode(soup):
     mode = soup.find("LastArea").get("Mode")
     return modes[mode]
 
-def get_time(soup):
+def get_time():
     return start_time
 
 def get_stats(soup):
     deaths = soup.find("TotalDeaths").get_text()
     strawberries = soup.find("TotalStrawberries").get_text()
-    golden_strawberries = soup.find("TotalGoldenStrawberries").get_text()
+    # golden_strawberries = soup.find("TotalGoldenStrawberries").get_text()
     return deaths + " deaths and " + strawberries + " strawberries"
 

@@ -28,6 +28,6 @@ while (True):
                large_text=get_stats(soup),
                state=get_mode(soup),
                details=get_chapter(soup),
-               start=get_time(soup))
+               start=get_time())
     print('updated')
     time.sleep(60)
